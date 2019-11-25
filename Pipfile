@@ -4,15 +4,22 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pytest = "*"
+pytest-django = "*"
+django-debug-toolbar = "*"
 pytest-cov = "*"
+factory-boy = "*"
 
 [packages]
-setuptools-scm = "*"
-awscli = "*"
-pandas = "*"
-xlrd = "*"
-fastparquet = "*"
+django = "*"
+django-environ = "*"
+djangorestframework = "*"
+django-model-utils = "*"
+argon2-cffi = "*"
+django-allauth = "*"
+django-crispy-forms = "*"
+django-extensions = "*"
+coreapi = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.7"
