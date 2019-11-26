@@ -1,5 +1,9 @@
 # Pset 6
 
+[![Build Status](https://travis-ci.com/csci-e-29/2019fa-pset-6-patchcasey.svg?token=5ichzqk8s8tsSTcNuNkm&branch=master)](https://travis-ci.com/csci-e-29/2019fa-pset-6-patchcasey)
+[![Maintainability](https://api.codeclimate.com/v1/badges/1c8c49edf0efed276cc5/maintainability)](https://codeclimate.com/repos/5dd720a70feeea01a1002060/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/1c8c49edf0efed276cc5/test_coverage)](https://codeclimate.com/repos/5dd720a70feeea01a1002060/test_coverage)
+
 ## Objective
 
 In this homework we ask you to install and configure a Django application, load
