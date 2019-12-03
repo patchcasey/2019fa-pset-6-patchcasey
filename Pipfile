@@ -20,6 +20,9 @@ django-crispy-forms = "*"
 django-extensions = "*"
 coreapi = "*"
 psycopg2 = "*"
+awscli = "*"
+pandas = "*"
+dask = {extras = ["dataframe"],version = "*"}
 
 [requires]
 python_version = "3.7"
