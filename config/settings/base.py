@@ -75,6 +75,12 @@ THIRD_PARTY_APPS = [
     "yelp_reviews.apps.YelpReviewsConfig",
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 10
+}
+
 LOCAL_APPS = [
     "pset_6.users.apps.UsersConfig",
     # Your stuff: custom apps go here
