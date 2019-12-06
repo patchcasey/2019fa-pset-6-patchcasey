@@ -17,9 +17,11 @@ class Command(BaseCommand):
         #TODO - add way to pull data into pset data folder (for travis)
         # NOTE: - I chose to write the pset5 material directly in here because I did not get to that part of the pset5
         # before it was due - thus, it doesn't make sense to go back and append it there, just to pull into here
+        # also - I chose to skip Luigi since I always have problems with it and stick to a basic but robust way of
+        # importing the data by using a makefile and storing the data for the dask dataframe in data/
 
         data_path = os.path.abspath(os.path.join(os.getcwd(), "data"))
-        reviews0 = dd.read_csv(data_path + "\*.csv",
+        reviews0 = dd.read_csv(os.path.join(data_path, "*.csv"),
                                parse_dates=['date'],
                                dtype={'cool': 'float64',
                                       'funny': 'float64',
