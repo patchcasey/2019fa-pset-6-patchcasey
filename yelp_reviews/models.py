@@ -4,6 +4,9 @@ from django.db import models
 class DimDate(models.Model):
     date = models.DateField(unique=True) # Date field
 
+    def __str__(self):
+        return self.date
+
 
 class FactReview(models.Model):
     date = models.ForeignKey(DimDate, on_delete=models.CASCADE) # ForeignKey
@@ -15,3 +18,6 @@ class FactReview(models.Model):
 
     class Meta:
         unique_together = ('id', 'date')
+
+    def __str__(self):
+        return self.count

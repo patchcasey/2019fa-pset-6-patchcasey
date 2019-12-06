@@ -30,6 +30,7 @@ jobs:
         - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
     - stage: answers
   script:
+    - make data
     - python manage.py migrate
     - python manage.py load_reviews
     - python manage.py summarize
